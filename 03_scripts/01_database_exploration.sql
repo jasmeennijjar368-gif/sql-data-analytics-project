@@ -1,0 +1,13 @@
+--Database Exploration 
+SELECT * FROM INFORMATION_SCHEMA.TABLES;
+
+--We can also explore only tables 
+SELECT * FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE ='BASE TABLE';
+
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS;
+
+--check columns of particular table
+SELECT * 
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name='dim_customers';
